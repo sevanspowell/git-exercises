@@ -40,7 +40,7 @@ private:
 	// dynamic array to store info
 	BoundingBox *m_BBox;
 	// number of BB created (i.e. array size)
-	int m_NoOfBoxes;
+	int m_NumOfBoxes;
 	// deletes arrays and clears memory
 	void ClearBB (BoundingBox* &tempArray);
 
@@ -74,7 +74,7 @@ public:
 	GLdouble GetMinY (const int & tempIndex) {return m_BBox[tempIndex].min.y;}
 	GLdouble GetMaxZ (const int & tempIndex) {return m_BBox[tempIndex].max.z;}
 	GLdouble GetMinZ (const int & tempIndex) {return m_BBox[tempIndex].min.z;}
-	int GetNoBoundingBoxes () {return m_NoOfBoxes;}
+	int GetNoBoundingBoxes () {return m_NumOfBoxes;}
 };
 
 #endif
